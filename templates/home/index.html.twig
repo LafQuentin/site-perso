@@ -1,6 +1,6 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Quentin LAFFEACH {% endblock %}
+{% block title %}Quentin Laffeach {% endblock %}
 
 {% block stylesheets %}
     <link rel="stylesheet" href="{{ asset('build/home.css') }}">
@@ -12,12 +12,27 @@
         <div class="row">
             <div class="col-md-12">
                 <p class="text-center mb-lg-5 mb-md-2 mt-lg-5 pt-lg-5 mt-md-2 pt-md-2">
-                    <img src="https://placeimg.com/150/150/people" class="rounded-circle border quentin" alt="Photo Quentin LAFFEACH">
+                    <img src="https://placeimg.com/150/150/people" class="rounded-circle border quentin"
+                         alt="Photo Quentin LAFFEACH">
                 </p>
                 <h1 class="text-center text-white font-weight-light">Quentin Laffeach</h1>
                 <h2 class="text-center text-white font-weight-light">Développeur PHP</h2>
                 <h3 class="text-center text-white font-weight-light">SEO | Webmarketing | Gestion de projets</h3>
-                <div class="btn btn-primary"></div>
+                <h5 class="text-center font-weight-light text-white">
+                    <i class="fas fa-fire text-secondary"></i> A la recherche d'un nouveau poste <i
+                            class="fas fa-fire text-secondary"></i>
+                </h5>
+                <p class="text-center">
+                    <a href="{{ path('curriculum_vitae') }}" class="btn btn-secondary btn-sm text-white"><i
+                                class="fas fa-briefcase"></i> CV</a>
+                    <a href="https://www.linkedin.com/in/quentin-laffeach-7295a080" rel="nofollow" target="_blank"
+                       class="btn btn-secondary btn-sm text-white"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://github.com/LafQuentin" rel="nofollow" target="_blank"
+                       class="btn btn-secondary btn-sm text-white"><i class="fab fa-github"></i></a>
+                    <a href="https://twitter.com/QLaffeach" rel="nofollow" target="_blank"
+                       class="btn btn-secondary btn-sm text-white"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-secondary btn-sm disabled text-muted"><i class="fas fa-fish"></i></a>
+                </p>
             </div>
         </div>
     </div>

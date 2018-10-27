@@ -1,5 +1,3 @@
-console.log('page home');
-
 import '../css/home.css';
 import '../js/particles.js';
 

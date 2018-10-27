@@ -1,17 +1,63 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Hello {{ controller_name }}!{% endblock %}
+{% block title %}CV Quentin Laffeach{% endblock %}
+
+{% block stylesheets %}
+    <link rel="stylesheet" href="{{ asset('build/cv.css') }}">
+{% endblock %}
 
 {% block body %}
-<style>
-    .example-wrapper { margin: 1em auto; max-width: 800px; width: 95%; font: 18px/1.5 sans-serif; }
-    .example-wrapper code { background: #F5F5F5; padding: 2px 6px; }
-</style>
+    <div class="container border mt-2">
+        <div class="row">
+            <div class="col-md-12 col-lg-6">
+                <h1 class="text-center font-weight-light">Quentin Laffeach</h1>
+                <h2 class="text-center font-weight-light">Développeur PHP</h2>
+                <h5 class="text-center font-weight-light">SEO | Gestion de projets</h5>
+            </div>
+            <div class="col-md-12 col-lg-6">
+                <p class="text-justify mt-md-2">
+                    Je suis Quentin Laffeach, j'ai 29 ans et j'habite en Haute-Savoie. Je suis actuellement en poste
+                    en tant que responsable web, SEO et m'occupe aussi du web marketing dans la société
+                    <a href="https://evialog.com" rel="nofollow" target="_blank">Evialog</a>. Je travail sur Symfony
+                    3/4, Bootstrap 4, Jquery...<br>
+                    <i class="fas fa-fire text-secondary"></i> <b>Je suis actuellement à la recherche d'un nouveau
+                        poste!</b>
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="bg-primary pt-2 col-lg-8"></div>
+            <div class="bg-secondary pt-2 col-lg-4"></div>
+        </div>
+        <div class="row pt-2">
+            <div class="col-md-12 col-lg-8">
+                <h4 class="font-weight-light"><i class="fas fa-terminal"></i> Expériences professionnelle</h4>
+            </div>
+            <div class="col-md-12 col-lg-4">
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item p-0 text-right">Haute-Savoie - Vallée verte <i
+                                class="fas fa-map-marker"></i></li>
+                    <li class="list-group-item p-0 border-top-0 text-right">29 ans <i
+                                class="fas fa-birthday-cake"></i>
+                    </li>
+                    <li class="list-group-item p-0 border-top-0 text-right"><a href="https://github.com/LafQuentin"
+                                                                               rel="nofollow"
+                                                                               target="_blank">@LafQuentin</a>
+                        <i class="fab fa-github"></i></li>
+                    <li class="list-group-item p-0 border-top-0 text-right"><a href="https://twitter.com/QLaffeach"
+                                                                               rel="nofollow"
+                                                                               target="_blank">@QLaffeach</a>
+                        <i class="fab fa-twitter"></i></li>
+                    <li class="list-group-item p-0 border-top-0 text-right">
+                        quentin@laffeach.fr <i class="fas fa-envelope"></i>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
 
-<div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+{% endblock %}
 
-    This friendly message is coming from:
-
-</div>
+{% block javascripts %}
+    <script src="{{ asset('build/cv.js') }}"></script>
 {% endblock %}

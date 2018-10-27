@@ -1,7 +1,11 @@
 // assets/css/global.scss
-
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,700');
 // customize some Bootstrap variables
-$primary: darken(#428bca, 20%);
+$primary: darken(#1857AA, 0%);
+$secondary: darken(#FFA30F, 0%);
+$font-family-sans-serif: 'Roboto', sans-serif;
+$font-family-monospace: 'Roboto', sans-serif;
+$headings-font-family: 'Roboto', sans-serif;
 
 // the ~ allows you to reference things in node_modules
 @import "~bootstrap/scss/bootstrap";

@@ -22,6 +22,7 @@ Encore
     .addEntry('app', './assets/js/app.js')
 
     .addEntry('home', './assets/js/home.js')
+    .addEntry('cv', './assets/js/cv.js')
 
     /*
      * FEATURE CONFIG
