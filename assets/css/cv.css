@@ -5,3 +5,11 @@ body {
 .container {
     background-color:  white;
 }
+
+ul, li {
+    list-style-type: none;
+}
+
+.progress {
+    height: 0.3rem !important;
+}
